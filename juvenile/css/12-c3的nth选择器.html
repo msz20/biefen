@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>马老师讲前端</title>
+        <style>
+            /* 
+            :nth-child(x)  选择第x个
+            :nth-child(xn)  选择x的倍数 
+            :nth-child(odd)  选择奇数  :nth-child(2n+1) 
+            :nth-child(even)  选择偶数数:nth-child(2n) 
+            :last-child  最后一个
+            :first-child  第一个
+            */
+            ul>li:first-child{
+                background-color: aqua;
+            }
+
+            div p:nth-child(2n){
+                background-color: red;
+
+
+                
+            }
+        </style>
+    </head>
+    <body>
+     
+        <ul>
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+            <li>004</li>
+            <li>005</li>
+            <li>006</li>
+            <li>007</li>
+        </ul>
+
+
+        <div>
+            <p>0001</p>
+            <span>111</span>
+            <p>0002</p>
+            <p>0003</p>
+            <p>0004</p>
+            <p>0005</p>
+        </div>
+
+     
+    </body>
+</html>

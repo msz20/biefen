@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>马老师讲前端-3种显示模式</title>
+    <style>
+        /* 块级元素的特点 
+            1. 独占一行
+            2. 可以直接设置尺寸
+        */
+        div{
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+        }
+
+        /* 行内元素的特点 
+            1. 一行内显示
+            2. 不可以直接设置尺寸
+        */
+        .sp{
+            background-color: green;
+            width: 200px;
+        }
+        /* 行内块元素的特点 
+            1. 有块级元素的特点：可以设置尺寸
+            2. 同时还有行内元素的特点：一行内显示。
+        */
+        .img{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 块级元素 -->
+    <div id="box1">div01</div>
+    <div id="box2">div02</div>
+    <!-- 行内元素 -->
+    <span class="sp">span1</span>
+    <span class="sp">span2</span>
+
+    <!-- 两个行内块元素 -->
+    <img src="../images/浮云一别.jpg" class="img">
+    <img src="../images/浮云一别.jpg" class="img">
+</body>
+
+</html>
