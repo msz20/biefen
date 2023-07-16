@@ -1,37 +1,72 @@
-# summer-program
+1. 前端
+  1. Html
+  2. Css
+  3. Js
+2. 后端
+  1. Python
+  2. Java
+  3. Php 
+  4. node
+3. 数据库
+  1. mysql
+---
+1. 网页
+1. 元素：文字、音视频、链接。。。html : 结构
+  1. 样式：将元素排版。。。。css：  化妆
+2. 交互: 动态效果+校验。。。。js  ： 动作
+  1. 数据：从服务端获取的内容：  灵魂
+http://jdd93.host3v.club/mddshopping/
 
-#### 介绍
-暑期和硕泽一起学编程
+2. HTML
+1. 默认结构，自动生成
+2. 元素都由标签的形式体现
+  1. 双标签
+  2. 单标签
+  3. 理解标签属性
+    1. 属性名
+    2. 属性值
+    3. 成对组成
+3. 常见标签
+  1. 标题
+  2. 图片
+    1. 路径问题
+    2. 尺寸问题
+    3. alt
+    4. id属性：标识，当前网页，唯一性。
+  3. id属性
+    1. 所有元素都可以加这个id标识。
+  4. 列表标签
+    1. 有序列表
+    2. 无序列表:ul>li
+    3. 自定义列表
+  5. div : 没有语义化的块级容器
+  6. span：没有语义化的行内元素
+  7. a：超链接
+    1. href属性
+  8. 表单标签
+    1. 表单属性：
+      1. action：决定跳转到哪里
+      2. method:提交方式
+    2. 表单元素
+      1. 文本输入框
+      2. 密码输入框
+      3. 单选框: name属性必须添加，相同的name属性表示同一组单选框，具备互斥效果
+      4. 多选框：name属性必须添加，相同的name属性表示同一组多选框
+      5. 文本域
+      6. 下拉选框
+      7. 提交按钮
+      8. 重置按钮
+    3. 表单属性
+      1. value：对于单选框和多选框，value用来传递点击或者勾选的数据
+      2. name: 必须给。用户输入框或者密码框或者文本域这种数据需要通过name传递。
+      3. placeholder
+      4. checked ： 属性名和属性值相同时，可以简写。建议写全。
+4. 元素的显示模式
+  1. 块级元素：独占一行，可以直接设置尺寸
+    1. 标题
+    2. p段落
+  2. 行内元素：一行内显示：不可以直接设置尺寸
+    1. Span
+  3. 行内块：可以一行显示，但是可以设置宽高尺寸
 
-#### 软件架构
-软件架构说明
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
