@@ -1,0 +1,14 @@
+h1{
+    /* 修改文字大小 */
+    font-size: 30px;
+    /* 字体粗细 */
+    font-weight: 400;
+    /* 字体风格 */
+    font-style: normal;
+    /* 字体样式：宋体、楷体、微软雅黑等，取决于C:\Windows\Fonts 中有哪些可用字体*/
+    font-family: 华文行楷;
+    /* 字体其他样式如何自学：https://developer.mozilla.org/zh-CN/  */
+
+    /* 修改文字颜色 */
+    color: aqua;
+}

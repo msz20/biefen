@@ -85,4 +85,58 @@ http://jdd93.host3v.club/mddshopping/
     1. Span
   3. 行内块：可以一行显示，但是可以设置宽高尺寸
 
+3. Css
+1. 入门
+  1. css存放位置
+css代码要放在 style 标签中
+ style  标签要放在 head 标签中
+  2. 语法
+选中要求改的元素{
+    属性名1 : 属性值1;
+    属性名2 : 属性值2;
+    ....
+}
+  1. 代码示例
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式入门：基本样式</title>
 
+    <style>
+        h1{
+            /* 修改文字大小 */
+            font-size: 30px;
+            /* 字体粗细 */
+            font-weight: 400;
+            /* 字体风格 */
+            font-style: normal;
+            /* 字体样式：宋体、楷体、微软雅黑等，取决于C:\Windows\Fonts 中有哪些可用字体*/
+            font-family: 华文行楷;
+            /* 字体其他样式如何自学：https://developer.mozilla.org/zh-CN/  */
+
+            /* 修改文字颜色 */
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        落花流水春去也
+    </h1>
+</body>
+</html>
+2. css代码位置，样式和结构分离。
+1. 将css代码单独封装到第三方文件  sty.css 
+2. 在需要用到的页面中引入 
+<link rel="stylesheet" href="./sty.css">
+3. 选择器
+如何选中元素
+1. 基础选择器
+  1. 元素选择器
+  2. id选择器
+  3. 类名选择器
+  4. 通配符选择器
+2. 复合选择器
