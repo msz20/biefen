@@ -1,6 +1,26 @@
-马老师语雀笔记：https://www.yuque.com/myw
+# 在线笔记
+[HTML笔记](https://www.yuque.com/myw/mps0hv)
+[CSS笔记](https://www.yuque.com/myw/css)
+[H5C3阶段](https://www.yuque.com/myw/di8gqh)
+[JavaScript基础](https://www.yuque.com/myw/javascriptbasic)
+[JavaScript-Web APIS](https://www.yuque.com/myw/hpkan9)
+[JavaScript高级](https://www.yuque.com/myw/hpkan9)
+[ajax](https://malaoshi.feishu.cn/drive/folder/fldcn09fMgibeWqEvCUpplfNpAh)
+
+[bootStrap5框架](https://malaoshi.feishu.cn/drive/folder/fldcnnMfYzqc0yUCr6CIMq2AwQf)
+[node](https://malaoshi.feishu.cn/drive/folder/fldcnoGTRNHim2vTzdmx3FSmInc)
+[vue](https://malaoshi.feishu.cn/drive/folder/fldcniDngiRjKlgjf2rwLjBttwh)
+
+
+[马老师笔记-多学科：](https://www.yuque.com/myw)
+
 ---
-协同gitee
+
+# 软件安装
+[MySQL8 （安装版）教程]
+(https://malaoshi.feishu.cn/docx/doxcn8yWT5lVNSPjbI18TSAHA9f)
+
+# git协同用法
 1. 安装git软件
 2. 拉去项目到本地
   1. 找一个存放代码的目录。
@@ -8,13 +28,14 @@
   3. 拉去云平台代码到本地： git pull
   4. 创建自己代码目录，编写代码。
   5. 上传自己的代码到gitee。
-    1. 标记当前目录代码已经被自己修改过了：git add .
+    1.  标记当前目录代码已经被自己修改过了：git add .
     2. 查看项目状态（可以省略）： git status  可以看到有自己更新过文件，变绿色。
     3. 提交代码到本地仓库： git commit -m '注释内容解释说明这次提交的意义'。如果是首次提交，需要设置用户名和邮箱
     4. 推送本地仓库代码到云端：git push。此时云端发生改变。如果是首次提交，需要登录用户名和密码
-3. 
 
 ---
+
+# 随堂笔记
 计划完成内容
 1. 前端
   1. Html
