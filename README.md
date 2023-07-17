@@ -196,39 +196,39 @@
 
       代码示例
       ```html
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>样式入门：基本样式</title>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>样式入门：基本样式</title>
 
-          <style>
-              h1{
-                  /* 修改文字大小 */
-                  font-size: 30px;
-                  /* 字体粗细 */
-                  font-weight: 400;
-                  /* 字体风格 */
-                  font-style: normal;
-                  /* 字体样式：宋体、楷体、微软雅黑等，取决于C:\Windows\Fonts 中有哪些可用字体*/
-                  font-family: 华文行楷;
-                  /* 字体其他样式如何自学：https://developer.mozilla.org/zh-CN/  */
+            <style>
+                h1{
+                    /* 修改文字大小 */
+                    font-size: 30px;
+                    /* 字体粗细 */
+                    font-weight: 400;
+                    /* 字体风格 */
+                    font-style: normal;
+                    /* 字体样式：宋体、楷体、微软雅黑等，取决于C:\Windows\Fonts 中有哪些可用字体*/
+                    font-family: 华文行楷;
+                    /* 字体其他样式如何自学：https://developer.mozilla.org/zh-CN/  */
 
-                  /* 修改文字颜色 */
-                  color: aqua;
-              }
-          </style>
-      </head>
-      <body>
-          
-          <h1>
-              落花流水春去也
-          </h1>
-      </body>
-    </html>
+                    /* 修改文字颜色 */
+                    color: aqua;
+                }
+            </style>
+        </head>
+        <body>
+            
+            <h1>
+                落花流水春去也
+            </h1>
+        </body>
+      </html>
       ```
-
+      
     2. css代码位置，样式和结构分离。
 
         1. 将css代码单独封装到第三方文件  sty.css 
