@@ -1,24 +1,33 @@
 # 在线笔记
 [HTML笔记](https://www.yuque.com/myw/mps0hv)
+
 [CSS笔记](https://www.yuque.com/myw/css)
+
 [H5C3阶段](https://www.yuque.com/myw/di8gqh)
+
 [JavaScript基础](https://www.yuque.com/myw/javascriptbasic)
+
 [JavaScript-Web APIS](https://www.yuque.com/myw/hpkan9)
+
 [JavaScript高级](https://www.yuque.com/myw/hpkan9)
+
 [ajax](https://malaoshi.feishu.cn/drive/folder/fldcn09fMgibeWqEvCUpplfNpAh)
 
+
 [bootStrap5框架](https://malaoshi.feishu.cn/drive/folder/fldcnnMfYzqc0yUCr6CIMq2AwQf)
+
 [node](https://malaoshi.feishu.cn/drive/folder/fldcnoGTRNHim2vTzdmx3FSmInc)
+
 [vue](https://malaoshi.feishu.cn/drive/folder/fldcniDngiRjKlgjf2rwLjBttwh)
 
 
-[马老师笔记-多学科：](https://www.yuque.com/myw)
+
+[马老师笔记-多学科](https://www.yuque.com/myw)
 
 ---
 
 # 软件安装
-[MySQL8 （安装版）教程]
-(https://malaoshi.feishu.cn/docx/doxcn8yWT5lVNSPjbI18TSAHA9f)
+[MySQL8 （安装版）教程](https://malaoshi.feishu.cn/docx/doxcn8yWT5lVNSPjbI18TSAHA9f)
 
 # git协同用法
 1. 安装git软件
@@ -28,9 +37,13 @@
   3. 拉去云平台代码到本地： git pull
   4. 创建自己代码目录，编写代码。
   5. 上传自己的代码到gitee。
+
     1.  标记当前目录代码已经被自己修改过了：git add .
+
     2. 查看项目状态（可以省略）： git status  可以看到有自己更新过文件，变绿色。
+
     3. 提交代码到本地仓库： git commit -m '注释内容解释说明这次提交的意义'。如果是首次提交，需要设置用户名和邮箱
+
     4. 推送本地仓库代码到云端：git push。此时云端发生改变。如果是首次提交，需要登录用户名和密码
 
 ---
@@ -54,7 +67,7 @@
   1. 样式：将元素排版。。。。css：  化妆
 2. 交互: 动态效果+校验。。。。js  ： 动作
   1. 数据：从服务端获取的内容：  灵魂
-http://jdd93.host3v.club/mddshopping/
+[静态网站效果](http://jdd93.host3v.club/mddshopping/)
 
 2. HTML
 1. 默认结构，自动生成
@@ -157,9 +170,27 @@ css代码要放在 style 标签中
 <link rel="stylesheet" href="./sty.css">
 3. 选择器
 如何选中元素
+
 1. 基础选择器
+
   1. 元素选择器
+
   2. id选择器
+
   3. 类名选择器
+
   4. 通配符选择器
+
 2. 复合选择器
+
+  1. 后代
+
+  2. 儿子
+
+  3. 兄弟
+
+  4. 并集
+
+  5. nth-child()
+
+  6. ...
