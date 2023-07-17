@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单填写</title>
+</head>
+<body>
+    <p>表单填写</p>
+    <hr>
+    <form action="#" id="regiset">
+        <label for="username">
+            用户名：
+        </label>
+
+        <input type="text" id="username" placeholder="请输入用户名" name="username">
+
+        <br><br>
+        密码：<input type="password" placeholder="请输入密码" name="password">
+        <br><br>
+        <hr>
+        性别：
+        <label for="man">
+            <span>男</span>
+        </label>
+        <input type="radio" id="man"name="sex" value="nan">
+
+        <label for="woman">
+            <span>女</span>
+        </label>
+        <input type="radio" name="sex" id="woman" value="nv">
+        <br>
+        爱好：
+        跳舞<input type="checkbox" name="hobby" id="yd1">
+        弹琴<input type="checkbox" name="hobby" id="yd2">
+        读书<input type="checkbox" name="hobby" id="yd3">
+        练字<input type="checkbox" name="hobby" id="yd4">
+        <hr><br>
+        自我介绍：<br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="请输入自我介绍，100字以内"></textarea>
+        <hr>
+        <input type="reset" value="重新填写">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
