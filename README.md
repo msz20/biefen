@@ -306,3 +306,63 @@ overflow: hidden;
   ## 布局技巧
     1. 使得块级元素一行内显示的时候，不要使用行内块。因为自带缝隙，不方便处理。
     2. 使用浮动或者flex
+
+# flex布局
+  1. 容器： display: flex;
+  2.  主轴方向          
+   ```css
+         
+            /* 设置主轴方向 ： 在容器中，子元素的排列方向*/
+            /* 设置主轴为 x 轴 */
+            flex-direction: row;
+            
+            /* 设置主轴为 x 轴 逆向  用的极少*/
+            flex-direction: row-reverse;
+
+            /* 设置主轴为 y 轴 */
+            flex-direction: column;
+
+             /* 设置主轴为 y 轴 逆向  用的极少*/
+            flex-direction: column-reverse;
+   ```            
+  3. 观察子盒子弹性效果。是否换行。
+  ```css
+              /* 子元素是否换行显示：
+                flex-wrap该属性记得是加在父容器身上，控制子项换行方式。
+                    nowrap : 默认，不换行，当子项总尺寸超过父容器的时候，也不换行，而是弹性挤压子项的尺寸。
+                    wrap： 换行，不挤压子项尺寸，装不下就换行。
+            */
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+  
+  ```
+  4. 主轴位置
+  ```css
+    /* 在主轴排列方式 
+            justify-content:控制主轴排列方式
+                flex-start：默认值，从前往后。
+                flex-end: 靠主轴末端。
+                center: 主轴居中
+                space-around: 把主轴上子项没用完的剩余空间，平均分给主轴上子项的两侧。均分空间的意思。
+                space-between : 主轴左右两侧贴边，中间的空间平分
+            */
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+  
+  ```
+  5. 侧轴位置
+  ```css
+               /* 
+                在侧轴排列方式
+                align-items: 控制侧轴排列
+                    flex-start：默认，靠侧轴从前往后。
+                    flex-end : 靠侧轴，从后往前
+                    center : 侧轴居中显示
+            */
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+  ```
