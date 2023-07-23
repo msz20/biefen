@@ -271,9 +271,57 @@
   ## 1. 盒子类型：
     内容盒子
     边框盒子（CSS3的盒子或者IE的怪异盒子）
+    ```css
+    /* 
+                 box-sizing:指定盒子的模型。
+                        content-box：默认的就是内容盒子。盒子的大小= 内容+内边距+边框
+                        border-box: CSS3盒子模型盒子多大，就是多大！！！盒子的大小= 宽高
+                */
+                box-sizing: border-box;
+    ```
   ## 2. 尺寸+边框
+  ```css
+     /*  尺寸+边框知识  默认情况会影响盒子大小*/
+            #top{
+                width: 100px;
+                height: 100px;
+
+               
+                /* 边框线 */
+                border: 1px solid red;
+            }
+  ```
   ## 3. 内边距
+  ```css
+      /* 内边距 ： 默认会改变盒子大小，会撑开盒子。*/
+            #content{
+                width: 238px;
+                height: 258px;
+                border: 1px solid green;
+
+                /* 四个值的顺序是：上右下左 */
+                padding: 10px 20px 30px 40px;
+                /* 如果只有三个值 : 上 左右   下  */
+                padding: 10px 20px 30px ;
+                /* 如果两个值：上下  左右  */
+                padding: 10px 20px ;
+
+                /* 一个值 ： 上下左右都是这个值*/
+                padding: 10px;
+            }
+  ```
   ## 4. 外边距
+  ```css
+   /* 外边距 : 不会影响盒子自身的尺寸大小。影响的是什么！！！盒子的摆放位置！！！*/
+            #bottom{
+                width: 200px;
+                height: 200px;
+                border: 1px solid blue;
+
+                /* 四个取值方式同内边距 */
+                margin: 10px 20px 30px 40px;
+            }
+  ```
   ## 5. 文字水平居中 + 文字垂直居中 + 盒子水平居中 
 
 # 布局知识
@@ -287,20 +335,13 @@
                 box-sizing: border-box;
             }
 
-/* 取消li的小圆点 */
-list-style: none;
+    /* 取消li的小圆点 */
+    list-style: none;
 
-/* 超出盒子内容隐藏起来 */
-overflow: hidden; 
-/* 左浮动 */
- float: left;
-
-
-
-
-
-
-
+    /* 超出盒子内容隐藏起来 */
+    overflow: hidden; 
+    /* 左浮动 */
+    float: left;
 
   ```
   ## 布局技巧
