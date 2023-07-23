@@ -6,12 +6,9 @@
     2. 看readme.md中在线笔记里的CSS+H5C3，细化知识点
     3. 编写代码：juvenile(少年志)目录中代码，从头到尾，练习1遍以上。
     4. 参考如下资料完成网站布局。
+        [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
 
-
-      [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
-
-
-      [马哥在线网站](http://mayw.host3v.club/mageOnline/)
+        [马哥在线网站](http://mayw.host3v.club/mageOnline/)
 
 3.  7月30日计划：JavaScript学习
 
