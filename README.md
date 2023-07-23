@@ -342,45 +342,52 @@
     /* 左浮动 */
     float: left;
     /* 背景 */
-  /* background-color: rgba(222, 11, 55, .
-  /* background-image: url('../images/kt.png');  */
-  /* 背景平铺 */
-  /* 默认平铺 */
-  /* background-repeat: repeat;    */
-  /* 不平铺 */
-  /* background-repeat: no-repeat; */
-  /* 平铺方向 */
-  /* background-repeat: repeat-x; */
-  /* background-repeat: repeat
-  /* 设置背景图尺寸 */
-  /* contain:放大图片，直到一个边触及盒子边框 */
-  /* background-size: contain;  */
-  /* cover:持续放大图片，直到完全覆盖盒子 */
-  /* background-size: cover; */
-  /* 可以使用百分比自定义拉伸尺寸 */
-  /* background-size: 50% 80%; */
-  /* x方向和y方向拉抻相同的百分比 是盒子尺寸的百分比*/
-  /* background-size: 10
-  /* 背景图片位置 :position 定位
-      方位名词写法： 只能在边角中间。。。等方位调整
-          x: left center right
-          y:top  center  bottom
-      精确单位：精确到任何
-      混合使用：随便混搭
-  */
-  /* 
-      background-position-x: 200px;
-      background-position-y: center; 
-  */
-  /* 简写定位： 如果只写一个值 第二个y轴默认center */
-  /* background-position: 300px bott
-  /* 触类旁通 举一反三  简写背景属性 */
-  background: gray url('../images/kt.png')  center bottom no-repeat ;
-  /* 
-      但是注意细节：背景图片的尺寸，background-size 不能跟其他背景属性简写到一起的
-      因为这是css3的属性
-  */
-  background-size: 400px 400px;
+  
+                /* background-color: rgba(222, 11, 55, .6); */
+
+                /* background-image: url('../images/kt.png');  */
+                /* 背景平铺 */
+                /* 默认平铺 */
+                /* background-repeat: repeat;    */
+                /* 不平铺 */
+                /* background-repeat: no-repeat; */
+                /* 平铺方向 */
+                /* background-repeat: repeat-x; */
+                /* background-repeat: repeat-y; */
+
+                /* 设置背景图尺寸 */
+                /* contain:放大图片，直到一个边触及盒子边框 */
+                /* background-size: contain;  */
+                /* cover:持续放大图片，直到完全覆盖盒子 */
+                /* background-size: cover; */
+                /* 可以使用百分比自定义拉伸尺寸 */
+                /* background-size: 50% 80%; */
+                /* x方向和y方向拉抻相同的百分比 是盒子尺寸的百分比*/
+                /* background-size: 100%; */
+
+                /* 背景图片位置 :position 定位
+                    方位名词写法： 只能在边角中间。。。等方位调整
+                        x: left center right
+                        y:top  center  bottom
+                    精确单位：精确到任何你喜欢的位置
+
+                    混合使用：随便混搭
+                */
+                /* 
+                    background-position-x: 200px;
+                    background-position-y: center; 
+                */
+                /* 简写定位： 如果只写一个值 第二个y轴默认center */
+                /* background-position: 300px bottom; */
+
+
+                /* 触类旁通 举一反三  简写背景属性 */
+                background: gray url('../images/kt.png')  center bottom no-repeat ;
+                /* 
+                    但是注意细节：背景图片的尺寸，background-size 不能跟其他背景属性简写到一起的
+                    因为这是css3的属性
+                */
+                background-size: 400px 400px;
 
   ```
   ## 布局技巧
