@@ -1,21 +1,21 @@
 # 学习计划+作业
-## 7月16：html+css入门
+1. 7月16：html+css入门
 
-## 7月23-29日：CSS布局
+2. 7月23-29日：CSS布局
     1. 打字每天20分钟：做到盲打。
     2. 看readme.md中在线笔记里的CSS+H5C3，细化知识点
     3. 编写代码：juvenile(少年志)目录中代码，从头到尾，练习1遍以上。
     4. 参考如下资料完成网站布局。
-       1.  [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
-       2.  [马哥在线网站](http://mayw.host3v.club/mageOnline/)
+   [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
+   [马哥在线网站](http://mayw.host3v.club/mageOnline/)
 
-## 7月30日计划：JavaScript学习
+3.  7月30日计划：JavaScript学习
 
-## 8月6日：node+mysql
+4. 8月6日：node+mysql
 
-## 8月13： 动态网站
+5. 8月13： 动态网站
 
-## 8月20： pythonWeb
+6. 8月20： pythonWeb
 ---
 
 # 参考网站
