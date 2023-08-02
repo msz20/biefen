@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C3的怪异盒子</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #we{
+            width: 200px;
+            height: 400px;
+            padding: 10px 20px 30px 40px;
+            border: 0.1px solid green;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="we">
+        <p>这是一个主内容</p>
+    </div>
+    <p class="qwe">这是一个毫无存在感的后缀内容</p>
+</body>
+</html>
