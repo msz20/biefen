@@ -17,64 +17,6 @@
 
   [axios中文网](https://axios.nodejs.cn/docs/intro)
 
-## vue快速入门：服务于web动态网站
-  ```html
-     <!DOCTYPE html>
-      <html lang="en">
-          <head>
-              <meta charset="UTF-8">
-              <title>马老师讲前端</title>
-          </head>
-          <body>
-              
-              <div id="app">
-                  {{ age }}
-
-                  <textarea name="" id="" cols="30" rows="10" ref="area" v-model="content" 
-                  v-on:keydown.enter="getTextareaCon()"></textarea>
-
-                  <hr>
-                  <ul>
-                      <li v-for="item in arr">  {{item}} </li>
-                  </ul>
-              </div>
-          
-              <div id="box"></div>
-          </body>
-      </html>
-      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-      <script>
-
-      const { createApp } = Vue
-
-
-      const app = createApp({
-          data(){
-              return {
-                  age :39,
-                  content :'',
-                  arr : []
-              }
-          } ,
-
-          methods:{
-              getTextareaCon(e){
-                this.arr.push(this.content) 
-                console.log(this.arr)
-                this.content = ''
-                //让当前元素输入框，失去焦点
-                this.$refs.area.blur()
-              }
-          }
-
-      })
-
-      app.mount('#app')
-
-      </script>
-  ```
-
 
 # 软件安装
 
@@ -135,3 +77,62 @@
     4. 推送本地仓库代码到云端：git push。此时云端发生改变。如果是首次提交，需要登录用户名和密码
 
 ---
+
+## vue快速入门：服务于web动态网站
+  ```html
+     <!DOCTYPE html>
+      <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>马老师讲前端</title>
+          </head>
+          <body>
+              
+              <div id="app">
+                  {{ age }}
+
+                  <textarea name="" id="" cols="30" rows="10" ref="area" v-model="content" 
+                  v-on:keydown.enter="getTextareaCon()"></textarea>
+
+                  <hr>
+                  <ul>
+                      <li v-for="item in arr">  {{item}} </li>
+                  </ul>
+              </div>
+          
+              <div id="box"></div>
+          </body>
+      </html>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+      <script>
+
+      const { createApp } = Vue
+
+
+      const app = createApp({
+          data(){
+              return {
+                  age :39,
+                  content :'',
+                  arr : []
+              }
+          } ,
+
+          methods:{
+              getTextareaCon(e){
+                this.arr.push(this.content) 
+                console.log(this.arr)
+                this.content = ''
+                //让当前元素输入框，失去焦点
+                this.$refs.area.blur()
+              }
+          }
+
+      })
+
+      app.mount('#app')
+
+      </script>
+  ```
+
