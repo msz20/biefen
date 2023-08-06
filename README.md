@@ -18,6 +18,10 @@
   
   [vue文档](https://cn.vuejs.org/)
 
+  [express中文文档](https://nodejs.cn/express/starter/)
+
+  [axios中文网](https://axios.nodejs.cn/docs/intro)
+
   ```html
      <!DOCTYPE html>
       <html lang="en">
@@ -107,13 +111,16 @@
 [vue](https://malaoshi.feishu.cn/drive/folder/fldcniDngiRjKlgjf2rwLjBttwh)
 
 
-
 [马老师笔记-多学科](https://www.yuque.com/myw)
 
 ---
 
 # 软件安装
 [MySQL8 （安装版）教程](https://malaoshi.feishu.cn/docx/doxcn8yWT5lVNSPjbI18TSAHA9f)
+
+[navicat安装步骤](https://malaoshi.feishu.cn/docx/doxcnCYDWKREgRhaBfQ3gu9xLWd)
+
+[node安装步骤](https://malaoshi.feishu.cn/docx/N99sdLaPOoS1DVx9PqYclqRmnhc)
 
 # git协同用法
 1. 安装git软件
