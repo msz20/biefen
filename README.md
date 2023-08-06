@@ -19,7 +19,7 @@
   [vue文档](https://cn.vuejs.org/)
 
   ```html
-      <!DOCTYPE html>
+     <!DOCTYPE html>
       <html lang="en">
           <head>
               <meta charset="UTF-8">
@@ -29,6 +29,14 @@
               
               <div id="app">
                   {{ age }}
+
+                  <textarea name="" id="" cols="30" rows="10" ref="area" v-model="content" 
+                  v-on:keydown.enter="getTextareaCon()"></textarea>
+
+                  <hr>
+                  <ul>
+                      <li v-for="item in arr">  {{item}} </li>
+                  </ul>
               </div>
           
               <div id="box"></div>
@@ -44,9 +52,22 @@
       const app = createApp({
           data(){
               return {
-                  age :39
+                  age :39,
+                  content :'',
+                  arr : []
               }
-          } 
+          } ,
+
+          methods:{
+              getTextareaCon(e){
+                this.arr.push(this.content) 
+                console.log(this.arr)
+                this.content = ''
+                //让当前元素输入框，失去焦点
+                this.$refs.area.blur()
+              }
+          }
+
       })
 
       app.mount('#app')
