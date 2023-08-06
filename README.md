@@ -10,14 +10,14 @@
         [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
 
         [马哥在线网站](http://mayw.host3v.club/mageOnline/)
+***
 
-3.  7月30日计划：JavaScript学习
+3. 8月6日：bootstrap+js+node+mysql
+  
+  [bootstap中文文档](https://www.bootstrap.cn/doc/read/94) 
+4. 8月13： 动态网站
 
-4. 8月6日：node+mysql
-
-5. 8月13： 动态网站
-
-6. 8月20： pythonWeb
+5. 8月20： pythonWeb
 ---
 
 # 参考网站
