@@ -115,6 +115,10 @@
 # 软件安装
 [MySQL8 （安装版）教程](https://malaoshi.feishu.cn/docx/doxcn8yWT5lVNSPjbI18TSAHA9f)
 
+[navicat安装步骤](https://malaoshi.feishu.cn/docx/doxcnCYDWKREgRhaBfQ3gu9xLWd)
+
+[node安装步骤](https://malaoshi.feishu.cn/docx/N99sdLaPOoS1DVx9PqYclqRmnhc)
+
 # git协同用法
 1. 安装git软件
 2. 拉去项目到本地
