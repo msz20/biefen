@@ -1,5 +1,7 @@
 # 参考资料
 
+  [马老师在线课堂-建议先两倍速学习一下](http://mayw.host3v.club/mageOnline/)
+
  [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
 
  [马哥在线网站](http://mayw.host3v.club/mageOnline/)
@@ -82,12 +84,11 @@
 
 [node安装步骤](https://malaoshi.feishu.cn/docx/N99sdLaPOoS1DVx9PqYclqRmnhc)
 
+[各种软件安装与破解](https://www.yuque.com/myw/ruanjian)
+
 ---
 
-# 参考网站
-[马老师在线课堂](http://mayw.host3v.club/mageOnline/)
-
-# 在线笔记
+# 编程知识在线笔记
 [HTML笔记](https://www.yuque.com/myw/mps0hv)
 
 [CSS笔记](https://www.yuque.com/myw/css)
