@@ -15,6 +15,46 @@
 3. 8月6日：bootstrap+js+node+mysql
   
   [bootstap中文文档](https://www.bootstrap.cn/doc/read/94) 
+  
+  [vue文档](https://cn.vuejs.org/)
+
+  ```html
+      <!DOCTYPE html>
+      <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>马老师讲前端</title>
+          </head>
+          <body>
+              
+              <div id="app">
+                  {{ age }}
+              </div>
+          
+              <div id="box"></div>
+          </body>
+      </html>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+      <script>
+
+      const { createApp } = Vue
+
+
+      const app = createApp({
+          data(){
+              return {
+                  age :39
+              }
+          } 
+      })
+
+      app.mount('#app')
+
+      </script>
+  ```
+
+
 4. 8月13： 动态网站
 
 5. 8月20： pythonWeb
