@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>马老师讲前端</title>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="getData()">点击我的时候获取服务端的数据</button>
+        <ul>
+            <li v-for="item in conArr"> {{item.id}}---{{item.content}} </li>
+        </ul>
+        <hr>
+        <textarea name="" id="" cols="30" rows="10" v-model="context"></textarea>
+        <hr>
+        <button v-on:click="postData()">点击的时候提交数据给服务器</button>
+    </div>
+
+</body>
+
+</html>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<!-- 使用ajax第三方在线包 axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+
+    const { createApp } = Vue
+    const app = createApp({
+        data() {
+            return {
+                conArr: [],
+                context:''
+            }
+        },
+        methods: {
+            getData() {
+                let that = this
+                // 访问服务器获取数据 : ajax技术。
+                axios.get('http://localhost:3000/data')
+                    .then(function (response) {
+                        // 把response.data 的内容拆开逐个放进conArr
+                        that.conArr=response.data
+
+                    })
+            },
+
+            postData() {
+                let that = this
+                // post请求注意按照如下格式。
+                axios.post('http://localhost:3000/data', {
+                    textCon: that.context
+                },
+                    {
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        }
+                    })
+                    .then(function (response) {
+                        console.log(response);
+                    })
+
+            }
+        }
+    })
+
+    app.mount('#app')
+
+</script>
