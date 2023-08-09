@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="container-md container-lg container-xl mt-4">
+        <nav class="navbar navbar-light bg-info  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:;">
+                    <img src="../image/Snipaste_2023-07-24_21-08-20.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    my...web...
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-4" id="module1">
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">主页</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">个人信息</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                    aria-selected="false">历史记录</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                    aria-selected="false">收藏</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+
+                    <!-- 文本输入框 -->
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="6" cols="130" placeholder="请输入内容后回车确认" ref="area"
+                            v-model="content" v-on:keydown.enter="addContentInArr()"></textarea>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <textarea name="form-control" rows="6" cols="130" placeholder="请输入内容后回车确认" ref="area"></textarea>  
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    懒得改
+                    <div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            我就是如此的懒
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4 mb-1" v-for="item in contentArr">
+            <div class="card text-center mt-1">
+                <div class="card-body">
+                    <p class="card-text">{{item}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container " style="height: 140px;background-color: #fff;">
+
+    </div>
+    <!-- 底部 -->
+    <div class="container-fluid fixed-bottom">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">此网站由孤独的字母M创建</h5>
+                <p class="card-text">这个人很懒什么也没有留下......</p>
+                <a href="https://gitee.com/mayuanwei/summer-program" class="btn btn-primary">This is a jump to the page</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+        const { createApp } = Vue
+    const app = createApp({
+        data() {
+            return {
+                contentArr: [],
+                content :''
+            }
+        },
+        methods: {
+            addContentInArr(){
+              this.contentArr.push(this.content)  
+              this.content =''
+                this.$refs.area.blur()
+            }
+        }
+    })
+
+    app.mount('#module1')
+</script>
