@@ -32,7 +32,7 @@
         data() {
             return {
                 conArr: [],
-                context:''
+                context: ''
             }
         },
         methods: {
@@ -42,7 +42,7 @@
                 axios.get('http://localhost:3000/data')
                     .then(function (response) {
                         // 把response.data 的内容拆开逐个放进conArr
-                        that.conArr=response.data
+                        that.conArr = response.data
 
                     })
             },
