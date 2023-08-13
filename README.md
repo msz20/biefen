@@ -16,7 +16,7 @@
 
 1. 全栈web网站：
 
-   ​	项目 `webProject`目录下分别存放两个目录。一个前端项目`webFE`,一个服务端项目`server`。
+   ​	项目 `webProject`目录下分别存放两个目录。一个前端项目`webFE`,一个服务端项目`server`。注意不能有中文目录。
 
 2. 技术栈：html+css+js+bootstrap+vue+ajax(axios)+node.js+mysql
 
