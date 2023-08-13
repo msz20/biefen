@@ -1,12 +1,13 @@
 
 
-# 参考资料
+# 学习目标
 
-  [马老师在线课堂-建议先两倍速学习一下](http://mayw.host3v.club/mageOnline/)
+ [马老师在线课堂-建议先两倍速学习一下](http://mayw.host3v.club/mageOnline/)
 
- [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
+ [音乐播放器项目](http://mayw.host3v.club/music-jquery/)
 
- [马哥在线网站](http://mayw.host3v.club/mageOnline/)
+ [马哥在线网站项目](http://mayw.host3v.club/mageOnline/)
+ > [马哥在线网站PSD效果图](https://www.123pan.com/s/A7oDVv-DyY4H) 
 
 ---
 
