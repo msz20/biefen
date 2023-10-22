@@ -6,6 +6,5 @@ print(massage)
 
 gas=['sdfgae','aywegai','asiefa']
 gas.append('hell')
-m=f"Hello,{gas[-1].title()}"
+m=f"Hello,{gas[1].title()}"
 print(m)
-
