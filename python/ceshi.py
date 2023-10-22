@@ -5,5 +5,7 @@ massage[0]='yyy'
 print(massage)
 
 gas=['sdfgae','aywegai','asiefa']
-m=f"Hello,{gas[0].title()}"
+gas.append('hell')
+m=f"Hello,{gas[-1].title()}"
 print(m)
+
