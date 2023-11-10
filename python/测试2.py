@@ -9,3 +9,8 @@ notocrycless=['honda','yamaha','suzski']
 notocrycless.insert(0, 'shubahe')
 m=f"My first moto is {notocrycless[0].title()}"
 print(m)
+massagger=['haonda','yamahe','suzuki']
+print(massagger)
+
+del massagger[0]
+print(massagger)
