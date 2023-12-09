@@ -1,0 +1,38 @@
+#!/bin/sh
+export QT_QPA_PLATFORM=xcb
+cd /opt/apps/com.alibabainc.dingtalk/files/1.4.0-Release.20425
+preload_libs=""
+
+# check os_info
+os_name=`cat /etc/os-release | grep ^ID= | cut -d'=' -f 2`
+echo ${os_name}
+libc_version=`ldd --version | grep ldd | cut -d' ' -f5`
+libc_version_num=`echo "${libc_version}" | tr '.' ' '`
+libc_version_m=0
+libc_version_b=0
+libc_lower=false
+
+for ia in ${libc_version_num}; do
+  if [ ${libc_version_m} -eq 0 ]; then
+   libc_version_m=$ia
+  elif [ ${libc_version_b} -eq 0 ]; then
+   libc_version_b=$ia
+  fi
+done
+
+if [ ${libc_version_m} -lt 2 ]; then
+    libc_lower=true
+fi
+if [ ${libc_version_b} -lt 28 ]; then
+    libc_lower=true
+fi
+if [ ${libc_version_m} -gt 2 ]; then
+    libc_lower=false
+fi
+
+if [ "${os_name}" = "kylin" ]; then
+    echo kylin branch
+    if [ "${libc_lower}" = "true" ]; then 
+        echo kylin v10 branch       
+        preload_libs="./envlib.so ./libharfbuzz.so.0 ./libidn2.so.0 ./libunistring.so.2 ./libz.so.1"
+    fi
