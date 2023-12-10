@@ -1,10 +1,10 @@
-massage= ['handa','yamaha','suzuki']
+massage = ['hand', 'yamaha', 'suzuki']
 print(massage)
 
-massage[0]='yyy'
+massage[0] = 'yyy'
 print(massage)
 
-gas=['sdfgae','aywegai','asiefa']
-gas.append('hell')
-m=f"Hello,{gas[1].title()}"
+gas = ['sdf', 'gainsayer', 'aiff', 'hell']
+m = f"Hello,{gas[1].title()}"
 print(m)
+
