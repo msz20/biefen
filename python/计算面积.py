@@ -3,4 +3,4 @@ width = float(input('请输入宽度:'))
 
 area= longth * width
 
-print(area)
+print(f"面积为{area}平方公里")
