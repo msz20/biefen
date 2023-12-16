@@ -1,15 +1,11 @@
-massage=[]
-
-massage.append('hadada')
-massage.append('yahama')
-massage.append('舒巴赫')
+massage = ['had', 'Bahama', '舒巴赫']
 
 print(massage[-2].title())
-notocrycless=['honda','yamaha','suzski']
-notocrycless.insert(0, 'shubahe')
-m=f"My first moto is {notocrycless[0].title()}"
+massager = ['honda', 'yamaha', 'sukiyaki']
+massager.insert(0, 'baksheesh')
+m = f"My first moto is {massager[0].title()}"
 print(m)
-massagger=['haonda','yamahe','suzuki']
+massagger = ['haonda', 'yammer', 'suzuki']
 print(massagger)
 
 del massagger[0]
