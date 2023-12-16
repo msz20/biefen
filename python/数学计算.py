@@ -19,9 +19,9 @@ z: int = 1442
 print(max(x, y, z))
 print(min(x, y, z))
 print(type(x))
-#四舍五入ruond
+# 四舍五入round
 xy = 12.3333
 print(round(xy))
-#绝对值abs
+# 绝对值abs
 xxx = -123412
 print(abs(xxx))
