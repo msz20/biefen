@@ -8,6 +8,6 @@ elif massage == '王丽格':
 elif massage == '王克伟':
     print('Hello! What fuck?')
 else:
-    print('无效')
+    print('你所输入的的内容无效.')
 # 有一个bug,这个文件在执行完white后,在输入人名,就不会执行if语句,会直接印出内容.
 # 修好了.
