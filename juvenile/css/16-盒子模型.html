@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>马老师讲前端</title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <title>马老师讲前端</title>
+    <style>
 
-            /* 必须写清除所有默认的内外边距 避免影响我自己想要的布局样式 */
-            *{
-                padding: 0;
-                margin: 0;
-            }
-
-
-            /*  尺寸+边框知识  默认情况会影响盒子大小*/
-            #top{
-                width: 100px;
-                height: 100px;
-
-               
-                /* 边框线 */
-                border: 1px solid red;
-            }
-
-            /* 内边距 ： 默认会改变盒子大小，会撑开盒子。*/
-            #content{
-                width: 238px;
-                height: 258px;
-                border: 1px solid green;
-
-                /* 四个值的顺序是：上右下左 */
-                padding: 10px 20px 30px 40px;
-                /* 如果只有三个值 : 上 左右   下  */
-                padding: 10px 20px 30px ;
-                /* 如果两个值：上下  左右  */
-                padding: 10px 20px ;
-
-                /* 一个值 ： 上下左右都是这个值*/
-                padding: 10px;
-            }
+        /* 必须写清除所有默认的内外边距 避免影响我自己想要的布局样式 */
+        *{
+            padding: 0;
+            margin: 0;
+        }
 
 
-            /* 外边距 : 不会影响盒子自身的尺寸大小。影响的是什么！！！盒子的摆放位置！！！*/
-            #bottom{
-                width: 200px;
-                height: 200px;
-                border: 1px solid blue;
+        /*  尺寸+边框知识  默认情况会影响盒子大小*/
+        #top{
+            width: 100px;
+            height: 100px;
 
-                /* 四个取值方式同内边距 */
-                margin: 10px 20px 30px 40px;
-            }
 
-        </style>
-    </head>
-    <body>
-     
-        <!-- 所谓的盒子就是不同的标签 div  -->
-        <div id="top">111</div>
-        <div id="content">222</div>
-        <div id="bottom">333</div>
-    </body>
+            /* 边框线 */
+            border: 1px solid red;
+        }
+
+        /* 内边距 ： 默认会改变盒子大小，会撑开盒子。*/
+        #content{
+            width: 238px;
+            height: 258px;
+            border: 1px solid green;
+
+            /* 四个值的顺序是：上右下左 */
+            padding: 10px 20px 30px 40px;
+            /* 如果只有三个值 : 上 左右   下  */
+            padding: 10px 20px 30px ;
+            /* 如果两个值：上下  左右  */
+            padding: 10px 20px ;
+
+            /* 一个值 ： 上下左右都是这个值*/
+            padding: 10px;
+        }
+
+
+        /* 外边距 : 不会影响盒子自身的尺寸大小。影响的是什么！！！盒子的摆放位置！！！*/
+        #bottom{
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+
+            /* 四个取值方式同内边距 */
+            margin: 10px 20px 30px 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 所谓的盒子就是不同的标签 div  -->
+<div id="top">111</div>
+<div id="content">222</div>
+<div id="bottom">333</div>
+</body>
 </html>

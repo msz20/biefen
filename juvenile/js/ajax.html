@@ -7,16 +7,16 @@
 </head>
 
 <body>
-    <div id="app">
-        <button v-on:click="getData()">点击我的时候获取服务端的数据</button>
-        <ul>
-            <li v-for="item in conArr"> {{item.id}}---{{item.content}} </li>
-        </ul>
-        <hr>
-        <textarea name="" id="" cols="30" rows="10" v-model="context"></textarea>
-        <hr>
-        <button v-on:click="postData()">点击的时候提交数据给服务器</button>
-    </div>
+<div id="app">
+    <button v-on:click="getData()">点击我的时候获取服务端的数据</button>
+    <ul>
+        <li v-for="item in conArr"> {{item.id}}---{{item.content}}</li>
+    </ul>
+    <hr>
+    <textarea cols="30" id="" name="" rows="10" v-model="context"></textarea>
+    <hr>
+    <button v-on:click="postData()">点击的时候提交数据给服务器</button>
+</div>
 
 </body>
 

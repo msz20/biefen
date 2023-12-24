@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>马老师讲前端</title>
-    </head>
-    <body>
-        
-        <div id="app">
-            {{ age }}
+<head>
+    <meta charset="UTF-8">
+    <title>马老师讲前端</title>
+</head>
+<body>
 
-            <textarea name="" id="" cols="30" rows="10" ref="area" v-model="content" 
-            v-on:keydown.enter="getTextareaCon()"></textarea>
+<div id="app">
+    {{ age }}
 
-            <hr>
-            <ul>
-                <li v-for="item in arr">  {{item}} </li>
-            </ul>
-        </div>
-     
-        <div id="box"></div>
-    </body>
+    <textarea cols="30" id="" name="" ref="area" rows="10" v-model="content"
+              v-on:keydown.enter="getTextareaCon()"></textarea>
+
+    <hr>
+    <ul>
+        <li v-for="item in arr"> {{item}}</li>
+    </ul>
+</div>
+
+<div id="box"></div>
+</body>
 </html>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <script>
 
-const { createApp } = Vue
+    const { createApp } = Vue
 
 
-const app = createApp({
-    data(){
-        return {
-            age :39,
-            content :'',
-            arr : []
+    const app = createApp({
+        data(){
+            return {
+                age :39,
+                content :'',
+                arr : []
+            }
+        } ,
+
+        methods:{
+            getTextareaCon(e){
+               this.arr.push(this.content)
+               console.log(this.arr)
+               this.content = ''
+               //让当前元素输入框，失去焦点
+               this.$refs.area.blur()
+            }
         }
-    } ,
 
-    methods:{
-        getTextareaCon(e){
-           this.arr.push(this.content) 
-           console.log(this.arr)
-           this.content = ''
-           //让当前元素输入框，失去焦点
-           this.$refs.area.blur()
-        }
-    }
+    })
 
-})
-
-app.mount('#app')
+    app.mount('#app')
 
 </script>
