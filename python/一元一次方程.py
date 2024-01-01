@@ -43,11 +43,12 @@
 # elif symbol == '/':
 #    result3 = x1 * Num
 #    result5 = x1 * result
-#    result = result3 / result5
+#     = result3 / result5
 #    print(result)
 # else:
 #    print('未知错误.')
-
+# 其实上面的代码不能跑,我还没有想出判断符号的方法.
+# 上面就是我写的屎山python,下面是Chatgpt写的,不得不说人工智能是真的强.
 x = float
 equation = input("请输入方程:")
 
