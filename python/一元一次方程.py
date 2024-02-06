@@ -52,18 +52,18 @@
 x = float
 equation = input("请输入方程:")
 
-# Split the equation into parts
+# 将方程分成几部分
 parts = equation.split("=")
 left_side = parts[0].strip()
 right_side = parts[1].strip()
 
-# Isolate the coefficient of x
-coefficient_of_x = float(left_side.split("x")[0] or 1)  # Handle cases with or without a coefficient
+# 分离 x 的系数
+coefficient_of_x = float(left_side.split("x")[0] or 1)  # 处理有或没有系数的情况
 
-# Isolate the constant term on the right side
+# 隔离右侧的常数项
 constant_term = float(right_side)
 
-# Solve for x using the appropriate mathematical operation
+# 使用适当的数学运算求解 x
 if "+" in equation:
     x = (constant_term - coefficient_of_x) / coefficient_of_x
 elif "-" in equation:
