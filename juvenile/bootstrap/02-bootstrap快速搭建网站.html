@@ -11,93 +11,90 @@
 </head>
 
 <body>
-<!-- 顶部 -->
-<div class="container-md container-lg container-xl mt-4">
-    <nav class="navbar navbar-light bg-info  ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:;">
-                <img alt="" class="d-inline-block align-text-top" height="24" src="../images/浮云一别.jpg" width="30">
-                my...web...
-            </a>
-        </div>
-    </nav>
-</div>
+    <!-- 顶部 -->
+    <div class="container-md container-lg container-xl mt-4">
+        <nav class="navbar navbar-light bg-info  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:;">
+                    <img alt="" class="d-inline-block align-text-top" height="24" src="../images/浮云一别.jpg" width="30">
+                    my...web...
+                </a>
+            </div>
+        </nav>
+    </div>
 
-<!-- 主题内容 ： 卡片效果 -->
-<div class="container mt-4" id="module1">
-    <div class="d-flex align-items-start">
-        <div aria-orientation="vertical" class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
-            <button aria-controls="v-pills-home" aria-selected="true" class="nav-link active"
+    <!-- 主题内容 ： 卡片效果 -->
+    <div class="container mt-4" id="module1">
+        <div class="d-flex align-items-start">
+            <div aria-orientation="vertical" class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
+                <button aria-controls="v-pills-home" aria-selected="true" class="nav-link active"
                     data-bs-target="#v-pills-home" data-bs-toggle="pill" id="v-pills-home-tab" role="tab"
                     type="button">首页模板
-            </button>
-            <button aria-controls="v-pills-profile" aria-selected="false" class="nav-link"
+                </button>
+                <button aria-controls="v-pills-profile" aria-selected="false" class="nav-link"
                     data-bs-target="#v-pills-profile" data-bs-toggle="pill" id="v-pills-profile-tab" role="tab"
                     type="button">待开发1
-            </button>
-            <button aria-controls="v-pills-messages" aria-selected="false" class="nav-link"
+                </button>
+                <button aria-controls="v-pills-messages" aria-selected="false" class="nav-link"
                     data-bs-target="#v-pills-messages" data-bs-toggle="pill" id="v-pills-messages-tab" role="tab"
                     type="button">待开发2
-            </button>
-            <button aria-controls="v-pills-settings" aria-selected="false" class="nav-link"
+                </button>
+                <button aria-controls="v-pills-settings" aria-selected="false" class="nav-link"
                     data-bs-target="#v-pills-settings" data-bs-toggle="pill" id="v-pills-settings-tab" role="tab"
                     type="button">待开发3
-            </button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-            <div aria-labelledby="v-pills-home-tab" class="tab-pane fade show active" id="v-pills-home"
-                 role="tabpanel">
+                </button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div aria-labelledby="v-pills-home-tab" class="tab-pane fade show active" id="v-pills-home"
+                    role="tabpanel">
 
-                <!-- 文本输入框 -->
-                <div class="mb-3">
-                        <textarea class="form-control" cols="130" placeholder="请输入内容...回车确认..."
-                                  ref="area"
-                                  rows="6"
-                                  v-model="content"
-                                  v-on:keydown.enter="addContentInArr()"
-                        ></textarea>
+                    <!-- 文本输入框 -->
+                    <div class="mb-3">
+                        <textarea class="form-control" cols="130" placeholder="请输入内容...回车确认..." ref="area" rows="6"
+                            v-model="content" v-on:keydown.enter="addContentInArr()"></textarea>
+                    </div>
+
                 </div>
-
-            </div>
-            <div aria-labelledby="v-pills-profile-tab" class="tab-pane fade" id="v-pills-profile" role="tabpanel">
-                1111
-            </div>
-            <div aria-labelledby="v-pills-messages-tab" class="tab-pane fade" id="v-pills-messages" role="tabpanel">
-                222
-                <div>
-                    <div aria-labelledby="v-pills-settings-tab" class="tab-pane fade" id="v-pills-settings"
-                         role="tabpanel">
-                        333
+                <div aria-labelledby="v-pills-profile-tab" class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+                    1111
+                </div>
+                <div aria-labelledby="v-pills-messages-tab" class="tab-pane fade" id="v-pills-messages" role="tabpanel">
+                    222
+                    <div>
+                        <div aria-labelledby="v-pills-settings-tab" class="tab-pane fade" id="v-pills-settings"
+                            role="tabpanel">
+                            333
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- 第一个模块的数据显示区域 -->
-    <div class="container mt-4 mb-1" v-for="item in contentArr">
-        <div class="card text-center mt-1">
-            <div class="card-body">
-                <p class="card-text">{{item}}</p>
+        <!-- 第一个模块的数据显示区域 -->
+        <div class="container mt-4 mb-1" v-for="item in contentArr">
+            <div class="card text-center mt-1">
+                <div class="card-body">
+                    <p class="card-text">{{item}}</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- 准备一个盒子，撑开一块区间。为了不让底部固定的盒子遮挡上方数据 -->
-<div class="container " style="height: 140px;background-color: #fff;">
+    <!-- 准备一个盒子，撑开一块区间。为了不让底部固定的盒子遮挡上方数据 -->
+    <div class="container " style="height: 140px;background-color: #fff;">
 
-</div>
-<!-- 底部 -->
-<div class="container-fluid fixed-bottom">
-    <div class="card text-center">
-        <div class="card-body">
-            <h5 class="card-title">暑期-快速搭建网站</h5>
-            <p class="card-text">html+css+bootstrap+javascript+ajax+axios+vue+node+mysql+python</p>
-            <a class="btn btn-primary" href="https://gitee.com/mayuanwei/summer-program">跳转惊喜...</a>
+    </div>
+    <!-- 底部 -->
+    <div class="container-fluid fixed-bottom">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">暑期-快速搭建网站</h5>
+                <p class="card-text">html+css+bootstrap+javascript+ajax+axios+vue+node+mysql+python</p>
+                <a class="btn btn-primary" href="https://gitee.com/mayuanwei/summer-program">跳转惊喜...</a>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -108,13 +105,13 @@
         data() {
             return {
                 contentArr: [],
-                content :''
+                content: ''
             }
         },
         methods: {
-            addContentInArr(){
-              this.contentArr.push(this.content)  
-              this.content =''
+            addContentInArr() {
+                this.contentArr.push(this.content)
+                this.content = ''
                 this.$refs.area.blur()
             }
         }

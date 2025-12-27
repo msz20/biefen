@@ -25,7 +25,7 @@ app.get('/hello', (req, res) => {
 
 app.get('/data', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*')
-    
+
 
     // 操作数据库 查询
     // 查询 users 表中所有的数据
@@ -36,7 +36,7 @@ app.get('/data', (req, res) => {
 
         res.send(results)
     })
-    
+
 })
 app.post('/data', (req, res) => {
     // 解决跨域问题

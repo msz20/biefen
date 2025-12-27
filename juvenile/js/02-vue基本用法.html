@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>马老师讲前端</title>
 </head>
+
 <body>
 
-<div id="app">
-    {{ age }}
+    <div id="app">
+        {{ age }}
 
-    <textarea cols="30" id="" name="" ref="area" rows="10" v-model="content"
-              v-on:keydown.enter="getTextareaCon()"></textarea>
+        <textarea cols="30" id="" name="" ref="area" rows="10" v-model="content"
+            v-on:keydown.enter="getTextareaCon()"></textarea>
 
-    <hr>
-    <ul>
-        <li v-for="item in arr"> {{item}}</li>
-    </ul>
-</div>
+        <hr>
+        <ul>
+            <li v-for="item in arr"> {{item}}</li>
+        </ul>
+    </div>
 
-<div id="box"></div>
+    <div id="box"></div>
 </body>
+
 </html>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -29,21 +32,21 @@
 
 
     const app = createApp({
-        data(){
+        data() {
             return {
-                age :39,
-                content :'',
-                arr : []
+                age: 39,
+                content: '',
+                arr: []
             }
-        } ,
+        },
 
-        methods:{
-            getTextareaCon(e){
-               this.arr.push(this.content)
-               console.log(this.arr)
-               this.content = ''
-               //让当前元素输入框，失去焦点
-               this.$refs.area.blur()
+        methods: {
+            getTextareaCon(e) {
+                this.arr.push(this.content)
+                console.log(this.arr)
+                this.content = ''
+                //让当前元素输入框，失去焦点
+                this.$refs.area.blur()
             }
         }
 
